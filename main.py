@@ -41,11 +41,13 @@ def interface(category ,question_type ,question ,correct_ans ,incorrect_ans ,opt
         print("d. "+options[3])
         print(" ")
 
-        user = str(input(" "))
-        if user in incorrect_ans:
-            print("incorrect Answer")
+        user = str(input("user : "))
+        if user == str(correct_ans):
+            print("correct")
+        
         else:
-            print("correct Answer")
+            print("incorrect")
+            print(str(correct_ans))
 
 
     else:
@@ -53,10 +55,10 @@ def interface(category ,question_type ,question ,correct_ans ,incorrect_ans ,opt
         print("a. True")
         print("b. False")
 
-        print(" ")
-        user = str(input(" "))
+        user = str(input("user : "))
         if user in incorrect_ans:
             print("incorrect Answer")
+            print(correct_ans)
         else:
             print("correct Answer")
             
